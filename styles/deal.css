@@ -1,0 +1,36 @@
+/* =========================================================
+   Page 3: The Deal (deal.html)
+   ========================================================= */
+
+/* ---------- Reassurance note ---------- */
+.deal-note {
+  background: rgba(42, 26, 94, 0.55);
+  border: 1px solid rgba(245, 197, 66, 0.25);
+  border-radius: 16px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--text);
+}
+
+.deal-note strong {
+  display: block;
+  font-family: var(--font-heading);
+  color: var(--gold);
+  margin-bottom: 0.25rem;
+}
+
+/* ---------- Gentle floating contract ---------- */
+.deal-visual svg {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-10px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .deal-visual svg {
+    animation: none;
+  }
+}

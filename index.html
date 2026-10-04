@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Idea Vault - a place where great project ideas are unlocked.">
+  <title>The Idea Vault | The Invitation</title>
+  <link rel="stylesheet" href="styles/home.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="index.html" class="logo">The Idea <span>Vault</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active" aria-current="page">The Invitation</a></li>
+        <li><a href="why.html">The Why</a></li>
+        <li><a href="how.html">The How</a></li>
+        <li><a href="start.html">The Start</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Welcome to The Idea Vault</p>
+        <h1>So, you have an <span class="gold">interesting</span> project idea.</h1>
+        <p class="lead">
+          Most ideas never leave the mind that birthed them. Some are locked away
+          and forgotten. A rare few are brought into the light.
+        </p>
+        <p class="mystery">
+          Yours has caught our attention. Step closer, there is something
+          you should know before the door opens.
+        </p>
+        <a href="why.html" class="btn">I'm listening...</a>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img">
+          <defs>
+            <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#f5c542" stop-opacity="0.55"/>
+              <stop offset="100%" stop-color="#f5c542" stop-opacity="0"/>
+            </radialGradient>
+            <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#ffe08a"/>
+              <stop offset="100%" stop-color="#b8860b"/>
+            </linearGradient>
+          </defs>
+
+          <!-- soft glow behind the vault -->
+          <circle cx="200" cy="200" r="195" fill="url(#glow)"/>
+
+          <!-- vault door rings -->
+          <circle cx="200" cy="200" r="150" fill="#1a1033" stroke="url(#gold)" stroke-width="8"/>
+          <circle cx="200" cy="200" r="120" fill="none" stroke="url(#gold)" stroke-width="2" stroke-dasharray="4 8"/>
+          <circle cx="200" cy="200" r="90" fill="#241447" stroke="url(#gold)" stroke-width="4"/>
+
+          <!-- bolts -->
+          <g fill="url(#gold)">
+            <circle cx="200" cy="62" r="7"/>
+            <circle cx="200" cy="338" r="7"/>
+            <circle cx="62" cy="200" r="7"/>
+            <circle cx="338" cy="200" r="7"/>
+            <circle cx="103" cy="103" r="6"/>
+            <circle cx="297" cy="103" r="6"/>
+            <circle cx="103" cy="297" r="6"/>
+            <circle cx="297" cy="297" r="6"/>
+          </g>
+
+          <!-- light bulb (the idea) -->
+          <path d="M200 160 a28 28 0 0 1 16 51 v14 h-32 v-14 a28 28 0 0 1 16 -51 z"
+                fill="none" stroke="url(#gold)" stroke-width="5" stroke-linejoin="round"/>
+          <line x1="187" y1="236" x2="213" y2="236" stroke="url(#gold)" stroke-width="5" stroke-linecap="round"/>
+          <line x1="191" y1="247" x2="209" y2="247" stroke="url(#gold)" stroke-width="5" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 The Idea Vault. Every great idea deserves a key.</p>
+  </footer>
+
+</body>
+</html>
